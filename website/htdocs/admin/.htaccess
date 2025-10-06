@@ -1,0 +1,9 @@
+AuthType Basic
+AuthName "Admin Area"
+AuthUserFile /path/to/.htpasswd
+Require valid-user
+
+# If you cannot set up basic auth, at least deny direct access to files:
+<IfModule mod_authz_core.c>
+  Require all granted
+</IfModule>

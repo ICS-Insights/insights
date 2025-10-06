@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px; }
+.article-list { list-style: none; padding:0; }
+.article-card { border-bottom: 1px solid #ddd; padding: 15px 0; }
+.article-card h2 { margin: 0 0 6px 0; }
+.post-meta { color: #666; font-size: 0.9em; margin-bottom:8px; }
+.admin-nav { margin-bottom: 20px; }
+.form-field { margin-bottom: 10px; }
+textarea { width:100%; min-height: 200px; }

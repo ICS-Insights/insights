@@ -1,0 +1,13 @@
+# Disable directory listings
+Options -Indexes
+
+# Basic security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Deny access to config.php if it is inside public_html (additional protection)
+<Files "config.php">
+  Require all denied
+</Files>
